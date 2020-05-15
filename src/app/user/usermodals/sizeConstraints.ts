@@ -1,0 +1,6 @@
+export const FileConstraint={
+    MAX_FILE_SIZE:3.5e+7,
+    DEFAULT_WIDTH:140,
+    DEFAULT_HEIGHT:80,
+    DEFAULT_COMPRESSION_MB:0.075
+}

@@ -1,0 +1,9 @@
+.changeImageResolution{
+display:flex;
+justify-content: space-evenly;
+flex-wrap:wrap;
+}
+
+#setting{
+    margin:10px;
+}

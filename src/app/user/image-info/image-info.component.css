@@ -1,0 +1,14 @@
+.imgcontainer{
+    width:100%;
+}
+
+.imgcontainer img{
+    width:100%;
+}
+
+.info{
+    margin-top:10px;
+    font-size: 12px;
+    display:flex;
+    justify-content: space-between;
+}

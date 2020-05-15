@@ -1,0 +1,57 @@
+<div id="setting">
+<form [formGroup]="settingForm"> 
+
+
+<div class="changeImageResolution">
+    <div>
+        <mat-form-field appearance="outline">
+            <mat-label>Width</mat-label>
+            <input type="number" matInput placeholder="Enter Image Width "  formControlName="width">
+            <mat-hint>Enter Number only</mat-hint>
+            <mat-error *ngFor="let validation of error_messages.width">
+                <mat-error class="error-message" *ngIf="settingForm.get('width').hasError(validation.type) && 
+                (settingForm.get('width').dirty || settingForm.get('width').touched)">
+                {{validation.message}}</mat-error>
+                 
+            </mat-error>
+          </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="outline">
+            <mat-label>Height</mat-label>
+            <input type="number" matInput placeholder="Enter Image Height "  formControlName="height">
+            <mat-hint>Enter Number only</mat-hint>
+            <mat-error *ngFor="let validation of error_messages.height">
+                <mat-error class="error-message" *ngIf="settingForm.get('height').hasError(validation.type) && 
+                (settingForm.get('height').dirty || settingForm.get('height').touched)">
+                {{validation.message}}</mat-error>
+                 
+            </mat-error>
+          </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="outline">
+            <mat-label>Compression</mat-label>
+            <input type="number" matInput placeholder="Enter MB of file size"  formControlName="size">
+            <mat-hint>Enter MB till which it is needed to be compressed</mat-hint>
+            <mat-error *ngFor="let validation of error_messages.size">
+                <mat-error class="error-message" *ngIf="settingForm.get('size').hasError(validation.type) && 
+                (settingForm.get('size').dirty || settingForm.get('size').touched)">
+                {{validation.message}}</mat-error>
+                 
+            </mat-error>
+          </mat-form-field>
+    </div>
+   
+    
+  
+    
+
+</div>
+<div style="text-align: center; margin-top: 20px;">
+    <button mat-raised-button color="primary" (click)="changeSizeAndRatio()">Update Scaling</button>
+
+</div>
+
+</form>
+</div>

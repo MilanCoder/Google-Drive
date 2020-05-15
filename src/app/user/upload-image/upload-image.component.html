@@ -1,0 +1,15 @@
+<div>
+<div class="imagepreview">
+    <div  *ngFor="let f of files" >
+        <preview-image (removeEmit)="onRemove($event)" [uploadfile]="f"></preview-image>
+          <div class="name">{{ f.name }} </div>
+    </div>
+
+</div>
+
+<div>
+    <ngx-dropzone class="custom-dropzone" [accept]="'image/*'"  (change)="onSelect($event)" >
+        <ngx-dropzone-label>Upload Images</ngx-dropzone-label>
+    </ngx-dropzone>
+</div>
+</div>

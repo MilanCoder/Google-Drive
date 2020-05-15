@@ -1,0 +1,13 @@
+
+<ngx-dropzone-image-preview (click)="openModifyImage()" class="prev" ngProjectAs="ngx-dropzone-preview" [file]="uploadfile.file" [removable]="true" (removed)="onRemove(uploadfile)">
+         
+</ngx-dropzone-image-preview>
+<div *ngIf="uploadfile.progress!=100" class="flexcontainer">
+   <div class="prg" >
+    <mat-progress-bar mode="determinate" [value]="uploadfile.progress"></mat-progress-bar>
+   </div>
+   <div  class="pn">
+    &nbsp; | {{uploadfile.progress | number:'1.0-0'}} %
+   </div>
+
+</div>

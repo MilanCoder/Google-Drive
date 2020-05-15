@@ -1,0 +1,30 @@
+<div>
+    <div class="imgcontainer">
+   <img [src]="data.url" alt="imageuploaded"/>
+    </div>
+    <div class="info">
+        <div>
+            <div>
+                Initial Width: {{data.width}}px
+            </div>
+            <div>
+             Initial Height: {{data.height}}px
+         </div>
+         <div>
+             Initial Size: {{size | number:'1.0-1'}}KB
+         </div>
+        </div>
+     <div>
+        <div>
+            Modified Width: {{mwidth}}px
+        </div>
+        <div>
+            Modified Height: {{mheight}}px
+        </div>
+        <div>
+            Modified Size: {{msize | number:'1.0-1'}} KB
+        </div>
+     </div>
+    
+    </div>
+</div>

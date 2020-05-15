@@ -1,0 +1,31 @@
+.prg{
+    width:80%;
+}
+
+
+.flexcontainer{
+    display:flex;
+   
+    align-items: center;
+}
+
+.pn{
+    width:20%;
+}
+
+
+
+    
+    ngx-dropzone-image-preview:focus{
+       
+        outline-color: lightgreen;
+    }
+    
+    
+    .name{
+       padding:10px;
+        border-radius:35px;
+        border:1px solid lightgray;
+        box-shadow: 0px 0px 5px 5px lightgray;
+    }
+    
